@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
 {
     log.Info($"Webhook was triggered!");
+    log.Info("commit test");
 
     var appKey = "FooKey";
     var appValue = ConfigurationManager.AppSettings[appKey];
